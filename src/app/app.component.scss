@@ -1,0 +1,48 @@
+.view-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.5em;
+
+  & > div {
+    margin: 0.25em;
+  }
+}
+
+.newItem-container {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-column-gap: 0.5em;
+
+  align-items: center;
+}
+
+.newItem-inputWrapper {
+  display: flex;
+
+  & > mat-form-field {
+    flex-grow: 1;
+  }
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.25em;
+
+  align-items: center;
+}
+
+.activeItem-input-wrapper {
+  display: flex;
+  height: 5.25em;
+
+  & > mat-form-field {
+    flex-grow: 1;
+  }
+}
+
+.item-label {
+  line-height: 5.25em;
+  vertical-align: center;
+}
